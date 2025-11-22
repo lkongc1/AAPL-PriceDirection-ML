@@ -68,3 +68,16 @@ Los modelos son calibrados y evaluados bajo un esquema walk-forward para evitar 
 
 Este proyecto es open source y se distribuye bajo la licencia MIT.  
 Consultar el archivo LICENSE para más información.
+
+## Versión de prueba para Android (app-debug.apk)
+
+Se incluye el archivo `app-debug.apk` con fines exclusivamente de prueba.  
+Este APK fue generado desde Android Studio utilizando el build variant "debug" y sirve únicamente para validar la instalación y funcionamiento básico de la aplicación en dispositivos Android.
+
+La aplicación no cuenta con funcionalidades adicionales y no realiza procesos reales.  
+Se proporciona un usuario de prueba para poder acceder a la interfaz:
+
+- **Email:** test@test.com  
+- **Contraseña:** 12345678  
+
+Este acceso es únicamente demostrativo y no representa datos reales ni información sensible.
