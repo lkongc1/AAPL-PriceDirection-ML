@@ -71,7 +71,7 @@ Consultar el archivo LICENSE para más información.
 
 ## Versión de prueba para Android (app-debug.apk)
 
-Se incluye el archivo `app-debug.apk` con fines exclusivamente de prueba.  
+Se incluye el archivo `app-debug.apk` con fines exclusivamente de prueba. Se encuentra en la carpeta android. 
 Este APK fue generado desde Android Studio utilizando el build variant "debug" y sirve únicamente para validar la instalación y funcionamiento básico de la aplicación en dispositivos Android.
 
 La aplicación no cuenta con funcionalidades adicionales y no realiza procesos reales.  
