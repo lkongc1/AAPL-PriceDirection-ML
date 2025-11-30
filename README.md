@@ -82,7 +82,7 @@ Se proporciona un usuario de prueba para poder acceder a la interfaz:
 
 Este acceso es únicamente demostrativo y no representa datos reales ni información sensible.
 
-## Ejecucion En entorno Local 
+## Ejecucion De Entrenamiento En entorno Local 
 Este proyecto puede ejecutarse de dos maneras:
 
 - **Ejecución normal (sin Dask)**: todo el proceso corre en una sola máquina/proceso.
@@ -122,4 +122,23 @@ conda activate ml_stocks_dist
 conda install numpy pandas matplotlib tqdm scikit-learn catboost xgboost lightgbm dask distributed toolz partd -c conda-forge
 ```
 
- 
+## Ejecución de Prueba del Modelo (Predicción)
+
+El archivo `run_pipeline.py` ejecuta todo el flujo de **actualización de datos**, **limpieza**, **generación de features** y **predicción del siguiente día** para la acción **AAPL** utilizando el modelo entrenado (`catboost_model.cbm`).
+
+---
+
+### Requisitos previos
+
+- Haber entrenado el modelo previamente y tener el archivo:
+/models/catboost_model.cbm
+
+- Tener los entornos creados (ver sección anterior)
+- Haber instalado dependencias (pip install -r requirements.txt)
+
+Dentro del entorno de conda:
+
+```bash
+conda activate ml_stocks_normal
+python run_pipeline.py
+```
