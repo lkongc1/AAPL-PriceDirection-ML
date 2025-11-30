@@ -14,7 +14,7 @@ from catboost import CatBoostClassifier
 # CONFIGURACIÓN DE RUTAS
 # ==============================
 BASE_PATH = Path(__file__).resolve().parent / "csv"
-MODEL_PATH = Path("catboost_model.cbm")
+MODEL_PATH = Path("/models/catboost_model.cbm")
 
 TICKERS = {
     "AAPL": "aapl_clean.csv",
