@@ -1,4 +1,4 @@
-# run_pipeline.py
+# python run_pipeline.py
 import warnings
 warnings.filterwarnings('ignore')
 

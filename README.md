@@ -81,3 +81,45 @@ Se proporciona un usuario de prueba para poder acceder a la interfaz:
 - **Contraseña:** 12345678  
 
 Este acceso es únicamente demostrativo y no representa datos reales ni información sensible.
+
+## Ejecucion En entorno Local 
+Este proyecto puede ejecutarse de dos maneras:
+
+- **Ejecución normal (sin Dask)**: todo el proceso corre en una sola máquina/proceso.
+- **Ejecución distribuida (Dask)**: el entrenamiento se reparte entre varios workers (núcleos o máquinas).
+
+---
+
+#### 1. Prerrequisitos
+
+- Tener instalado **Conda** (miniconda en windows)
+- Haber clonado el repositorio y estar en la carpeta raíz del proyecto
+- Conexión a internet para descargar dependencias.
+
+- Ejecución normal (sin Dask): usa Python **3.12.10**.
+- Ejecución distribuida (con Dask): usa Python **3.10.19** debido a dependencias internas de Dask/Distributed.
+
+---
+
+## 2. Crear entornos Conda para cada modalidad
+
+### Ejecución normal (sin Dask) — Python 3.12.19
+
+```bash
+conda create -n ml_stocks_normal python=3.12.19 -y
+
+conda activate ml_stocks_normal
+
+pip install -r requirements.txt
+```
+### Ejecución distribuida (con Dask) — Python 3.10.19
+
+```bash
+conda create -n ml_stocks_dist python=3.10.19 -y
+
+conda activate ml_stocks_dist
+
+conda install numpy pandas matplotlib tqdm scikit-learn catboost xgboost lightgbm dask distributed toolz partd -c conda-forge
+```
+
+ 
